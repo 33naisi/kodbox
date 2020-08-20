@@ -24,7 +24,7 @@ RUN set -x \
 
 RUN set -x \
  && mkdir -p /usr/src/kodexplorer \
- && curl -o /tmp/kodexplorer.zip http://static.kodcloud.com/update/download/kodexplorer4.40.zip \
+ && curl -o /tmp/kodexplorer.zip http://static.kodcloud.com/update/download/kodbox.1.11.zip \
  && unzip -d /usr/src/kodexplorer/ /tmp/kodexplorer.zip \
  && rm -rf /tmp/*
 
