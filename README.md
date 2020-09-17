@@ -3,7 +3,7 @@
 
 更新日志，http://doc.kodcloud.com/v2/#/help/changeLog
 
-运行：docker run -d --name kodexplorer --restart always -p 80:80 -p 443:443 -v $your_dir:/var/www/html/data -v $your_ssl_dir:/ssl/ 33naisi/kodexplorer2
+运行：docker run -d --name kodexplorer --restart always -p 80:80 -p 443:443 -v $your_dir:/var/www/html/data -v $your_ssl_dir:/ssl/ 33naisi/kodbox
 
 如果不想要自动跳转，可以在容器/etc/apache2/sites-available/000-default.conf文件中删除“RewriteEngine on   RewriteCond %{HTTPS} !=on   RewriteRule ^(.*) https://%{SERVER_NAME}$1 [L,R]”
 
