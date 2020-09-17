@@ -1,7 +1,13 @@
 # kodbox
-可道云kodbox，现在版本1.11，此容器支持https访问。
+可道云kodbox，现在版本1.12，发布于: 2020.09.03，此容器支持https访问，http自动跳转https。
 
-持久性数据：/var/www/html/ /etc/apache2/ssl/。
+更新日志，http://doc.kodcloud.com/v2/#/help/changeLog
+
+运行：docker run -d --name kodexplorer --restart always -p 80:80 -p 443:443 -v $your_dir:/var/www/html/data -v $your_ssl_dir:/ssl/ 33naisi/kodexplorer2
+
+如果不想要自动跳转，可以在容器/etc/apache2/sites-available/000-default.conf文件中删除“RewriteEngine on   RewriteCond %{HTTPS} !=on   RewriteRule ^(.*) https://%{SERVER_NAME}$1 [L,R]”
+
+持久性数据：/var/www/html/ /ssl/。
 
 端口：80 443。
 
