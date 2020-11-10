@@ -1,7 +1,8 @@
 # kodbox
-* 可道云kodbox，现在版本1.13，发布于: 2020.09.03，此容器支持https访问，http自动跳转https。
 
-* 更新日志，http://doc.kodcloud.com/v2/#/help/changeLog
+* 可道云kodbox，现在版本1.13，发布于: 2020.10.10，此镜像支持https访问，http自动跳转https。
+
+* 更新日志，https://doc.kodcloud.com/v2/#/help/changeLog
 
 * 运行：docker run -d --name kodexplorer --restart always -p 80:80 -p 443:443 -v $your_dir:/var/www/html/data -v $your_ssl_dir:/ssl/ 33naisi/kodbox
 
